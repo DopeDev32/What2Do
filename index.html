@@ -5,22 +5,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>To-Do List</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-	<div class="container">
-		<h1>What 2do</h1>
-	<form>
-		<input type="text" placeholder="Title " id="title" required>
-		<textarea id="description" placeholder="Description " required></textarea>
-		<button type="submit">Add</button>
-	</form>	
-	<!-- <div class="task">
-		<div>
-			<p>title heree</p>
-			<span>Description Here</span>
+	<div class="container animate-fade-in">
+		<h1 class="animate-slide-down">What 2do <i class="fas fa-check-circle"></i></h1>
+		<form class="animate-slide-up">
+			<div class="input-group">
+				<input type="text" placeholder="What's your next task?" id="title" required class="animate-fade-in">
+				<textarea id="description" placeholder="Add some details..." required class="animate-fade-in"></textarea>
+			</div>
+			<button type="submit" class="btn animate-scale">
+				<i class="fas fa-plus"></i> Add Task
+			</button>
+		</form>	
+		<div id="tasks-container" class="animate-fade-in">
 		</div>
-		<button class="delbtn">-</button>
-	</div> -->
 	</div>
 	
 	<script src="app.js"></script>
